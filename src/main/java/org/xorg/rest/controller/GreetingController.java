@@ -2,6 +2,7 @@ package org.xorg.rest.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.xorg.rest.model.Greeting;
 
 import java.util.concurrent.atomic.AtomicLong;
@@ -9,6 +10,7 @@ import java.util.concurrent.atomic.AtomicLong;
 /**
  * Created by mohdtaufik on 12/29/2017.
  */
+@RestController
 public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
